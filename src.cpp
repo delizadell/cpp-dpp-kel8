@@ -88,7 +88,42 @@ int main() {
             cout << "1.Kasir" << endl;
             cout << "2.Inventaris" << endl;
             if(input == 1){
-                //Kode Kasir
+                int Jumlah_uang=0, Total_harga=0, Kembalian=0;
+   int pulpen=0, pensil=0, penggaris=0, penghapus=0, input1,input2;
+    cout << "Masukkan barang yang dibeli ";
+    cin >> input1;
+    cout << "Masukkan jumlah barang yang dibeli ";
+        if(input1 == 1){
+            cin >> input2;
+            pulpen  += input2;
+            cout << "pulpen " << pulpen <<endl;
+        }else if(input1 == 2){
+            cin >> input2;
+            pensil += input2;
+            cout << "pensil " << pensil <<endl;
+        }else if(input1 == 3){
+            cin >> input2;
+            penggaris += input2;
+            cout << "penggaris " << penggaris <<endl;
+        }else if(input1 == 4){
+            cin >> input2;
+            penghapus += input2;
+            cout << "penghapus " << penghapus << endl;
+        }
+        
+    int harga_pulpen = 3000 * pulpen;
+    int harga_pensil = 1000 * pensil;
+    int harga_penggaris = 3000 * penggaris;
+    int harga_penghapus = 1500 * penghapus;
+    
+   Total_harga = harga_pulpen + harga_pensil + harga_penggaris + harga_penghapus;
+   cout << "Total harga : ";
+   cout << Total_harga <<endl;
+    cout << "Masukkan nominal uang yang diberikan : ";
+    cin >> Jumlah_uang;
+    cout << endl;
+  Kembalian = Jumlah_uang - Total_harga;
+  cout << "Kembalian : " << Kembalian;
             }
              if(input == 2){
                 //Kode Invetaris
