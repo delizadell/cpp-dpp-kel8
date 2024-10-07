@@ -85,13 +85,14 @@ int main() {
                 cout << endl;
             }
             cout << "========================================" << endl;
-
-
-
-
-/* CODE INVENTARIS DAN KASIR DISINI*/
-
-
+            cout << "1.Kasir" << endl;
+            cout << "2.Inventaris" << endl;
+            if(input == 1){
+                //Kode Kasir
+            }
+             if(input == 2){
+                //Kode Invetaris
+            }
 
 
             cin >> input;
