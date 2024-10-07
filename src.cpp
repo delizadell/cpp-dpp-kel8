@@ -91,7 +91,46 @@ int main() {
                 //Kode Kasir
             }
              if(input == 2){
-                //Kode Invetaris
+                #include <iostream>
+using namespace std;
+
+
+int main (){
+    while (true){
+      int pulpen = 0, pensil = 0, penggaris = 0;
+      int input1, input2;
+      cout << "Barang Apa yang Ingin Anda Tambah? " << endl;
+        cin >> input1;
+    
+    if(input1 == 1){
+        cout << "Pulpen\n" << endl;
+        cout << "Berapa Jumlah Stok yang Akan ditambah? " << endl;
+        cin >> input2;
+        pulpen = pulpen+input2;
+        cout << "Total Pulpen Adalah : " << pulpen << endl << endl;
+        
+    }else if(input2 == 2){
+        cout << "Pensil\n" << endl;
+        cout << "Berapa Jumlah Stok yang Akan ditambah? " << endl;
+        cin >> input2;
+        pensil = pensil+input2;
+        cout << "Total Pensil Adalah : " << pensil << endl << endl;
+        
+    }else if(input1 == 3){
+        cout << "Penggaris\n" << endl;
+        cout << "Berapa Jumlah Stok yang Akan ditambah? " << endl;
+        cin >> input2;
+        penggaris = penggaris + input2;
+        cout << "Total Penggaris Adalah : \n" << penggaris << endl;
+        
+    }
+    }
+    
+    
+   
+    
+    return 0;
+}
             }
 
 
